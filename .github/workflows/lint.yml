@@ -14,6 +14,6 @@ jobs:
         # Optional: specify the version of Ruff to install (default is "latest")
         version: "latest"
         # Optional: specify arguments to pass to the ruff command (default is "check")
-        args: "--output-format=github ."
+        args: "check --output-format=github ."
         # Optional: specify the source directory (default is the workspace root)
         src: "."
