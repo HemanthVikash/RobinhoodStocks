@@ -46,6 +46,7 @@ dependencies:
       - python-dotenv==1.2.2
       - requests==2.32.5
       - robin-stocks==3.4.0
+      - ruff==0.15.8
       - starlette==1.0.0
       - typing-extensions==4.15.0
       - typing-inspection==0.4.2
