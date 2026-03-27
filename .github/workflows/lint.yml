@@ -1,0 +1,19 @@
+name: Ruff Lint
+on: [push, pull_request]
+
+jobs:
+  ruff_lint:
+    name: Ruff Check
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run Ruff
+      # Use the official action
+      uses: astral-sh/ruff-action@v3
+      with:
+        # Optional: specify the version of Ruff to install (default is "latest")
+        version: "latest"
+        # Optional: specify arguments to pass to the ruff command (default is "check")
+        args: "--output-format=github ."
+        # Optional: specify the source directory (default is the workspace root)
+        src: "."
